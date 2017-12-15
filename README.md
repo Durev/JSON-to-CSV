@@ -11,7 +11,7 @@ Git clone or download this repository.
 
 ### Update files names
 
-Update `json_file_path` with the json file path, and `csv_result_path` with the desired CSV output file name (make sure to use and existing directory for the output).
+Update `json_file_path` with the json file path, and `csv_result_path` with the desired CSV output file name (make sure to use an existing directory for the output).
 
 ```
 # --- Select desired path ---
@@ -25,7 +25,7 @@ csv_result_path = "my_result.csv"
 Run the *json_to_csv.rb* file
 
 ```
-ruby json_to_csv.rb
+$ ruby json_to_csv.rb
 ```
 A new *.csv* file will be created.
 
