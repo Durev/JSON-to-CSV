@@ -1,8 +1,13 @@
 require 'json'
 require 'csv'
 
-file = File.open("users.json").read
-json = JSON.parse(file)
+# --- Select desired path ---
+json_file_path = "users.json"
+csv_result_path = "users.csv"
+# ---------------------------
+
+json_file = File.open(json_file_path).read
+json = JSON.parse(json_file)
 
 # Get field names first - In this case, we assume that all objects are normalized
 def get_fields_name(object, path = nil)
@@ -35,7 +40,7 @@ def hash_to_array(hash)
 end
 
 # Write in CSV file
-CSV.open("users.csv", "wb") do |csv|
+CSV.open(csv_result_path, "wb") do |csv|
   csv << get_fields_name(json.first)
   json.each {|object| csv << hash_to_array(object)}
 end
