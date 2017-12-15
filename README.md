@@ -9,9 +9,9 @@ Git clone or download this repository.
 
 ## Converting from JSON to CSV
 
-### Update files names
+### Update path names
 
-Update `json_file_path` with the json file path, and `csv_result_path` with the desired CSV output file name (make sure to use an existing directory for the output).
+Update `json_file_path` with your json file path and name, and `csv_result_path` with the desired CSV output file name (make sure to use an existing directory for the output).
 
 ```
 # --- Select desired path ---
